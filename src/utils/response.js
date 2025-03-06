@@ -40,7 +40,7 @@ const sendSuccessResponseWithPagination = (
 };
 
 const sendErrorResponse = (res, status, data = null, message) => {
-  console.log("Error occured : ", message);
+  console.log("Error occured : ", data);
   return res.status(status).json({
     data,
     meta: {
